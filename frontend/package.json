@@ -1,0 +1,47 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@coreui/icons": "^3.0.1",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mdi/js": "^7.4.47",
+    "@mdi/react": "^1.6.1",
+    "@mui/icons-material": "^5.15.11",
+    "@mui/material": "^5.15.11",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.17",
+    "@nextui-org/react": "^2.2.10",
+    "@nextui-org/system": "^2.0.15",
+    "@nextui-org/theme": "^2.1.18",
+    "@radix-ui/react-icons": "^1.3.0",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "framer-motion": "^11.0.8",
+    "magic.css": "^1.4.8",
+    "next": "14.0.4",
+    "next-themes": "^0.2.1",
+    "react": "^18",
+    "react-bootstrap": "^2.10.1",
+    "react-dom": "^18",
+    "react-dropzone": "^14.2.3",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.22.2",
+    "skeleton-elements": "^4.0.1",
+    "styled-components": "^6.1.8",
+    "tailwind": "^4.0.0",
+    "use-dark-mode": "^2.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "postcss-nesting": "^12.0.2",
+    "tailwindcss": "^3.4.1"
+  }
+}

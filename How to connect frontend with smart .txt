@@ -1,0 +1,88 @@
+How to connect frontend with smart contract
+check video here: https://www.youtube.com/watch?v=eSlIs2_cSIw&list=PLWUCKsxdKl0olgEF4OxXVk2B-jwpGqL5d&index=33
+
+Step-1
+                                            MOST IMP STEP
+|-----------------------------------------------------------------------------------------------|
+|		Delete ReadMe file front the root directory of your frontend app.		|
+|-----------------------------------------------------------------------------------------------|
+
+
+Step-2	npm install hardhat
+	npx hardhat init
+		choose javascript and enter..
+
+	
+Step-3	ANOTHER IMP STEP
+	- CHECK VERSIONS OF SOLIDITY AND IMPORT STATEMENTS IN YOUR CONTRACT. BECAUSE SOME IMPORT STATEMENTS ARE 	  NOT THERE IN @OPNZEPPELIN VERSIONS (FROM 5.0.0), THEREFORE I HAVE USED (4.9.3) THAT INCLUDES 	    	  	  (Counters.sol).
+	
+	- Check "hardhat.colfig.js " file located in main directory. check the solidity version. the version 	  	  should be should everywhere like in main smart contract emntioned at top (pragma solidity ^0.8.9), in 	  package.json file like (solc: "0.8.9").
+
+
+
+Step-4	open ReadMe file generated after running command npm hardhat init because it is updated after 	initializating it.
+	
+
+
+Step-5  create a context folder in root directory.
+	create 2 file: 
+		1. constants.js - in which we store the ABI and contract address. (when we run deploy script one 				  folder is generate in root directory named "artifacts" and we can fild ABI at 				  artifacts -> contracts -> contract name[NFTMarketPlace] -> 							  contractName.json[NFTMarketPlace.json]) and move this ABI to Context folder.
+
+		2. NFTMarketPlaceContext.js- This is the place where we are going to communicate and bring the 						     logic.
+
+
+
+Step-6  Testing
+
+Step-7  [ npm i ipfs-http-client ] and [ npm i axios ]
+	
+	Import these two things in context.js (NFTMarkeyPlaceContext.js) as:
+		import axios from "axios";
+		import { create as ipfsHttpClient } from "ipfs-http-client";
+
+	What is IPFS? The hard drive for Blockchain
+		IPFS (Interplanetary File System) is essentially a file system that allows you to store files and 		track versions over time, much like Git, keeping track of them on a distributed network, somewhat 		like BitTorrent.
+	
+	What is Axios?
+		Axios is a Javascript library used to make HTTP requests from node.js or XMLHttpRequests from the 		browser and it supports the Promise API that is native to JS ES6. It can be used intercept HTTP 		requests and responses and enables client-side protection against XSRF. It also has the ability to 		cancel requests. 
+
+
+
+step-7  Add a function in context.js (NFTMarkeyPlaceContext.js) as:
+	const fetchContract = (signerOrProvider) =>
+  		new ethers.Contract(
+   		NFTMarketplaceABI,
+    		NFTMarketplaceAddress,
+    		signerOrProvider
+  		);
+
+Step-8  How to fetch contract and connect to smart contract
+	const fetchContract = (signerOrProvider) =>
+  		new ethers.Contract(
+    		NFTMarketplaceABI,
+    		NFTMarketplaceAddress,
+    		signerOrProvider
+  		);
+
+	// Creating a reusable code so that we don't have to repeat this code again and again.
+	// Connecting with smart contract.
+
+	const connectingWithSmartContract = async () => {
+  		try {
+    			const web3Modal = new web3Modal();
+    			const connection = await web3Modal.connect();
+    			const provider = new ethers.providers.Web3Provider(connection);
+    			const signer = provider.getSigner(); // so who ever is connected with wallet become signer.
+    			const contract = fetchContract(signer); // fetching conract and asigning the signer to it.
+    			return contract;
+  		} catch (error) {
+    			console.log("Something went wrong while connecting with smart contract");
+  		}
+	};
+
+
+
+
+
+
+

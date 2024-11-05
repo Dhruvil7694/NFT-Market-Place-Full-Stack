@@ -1,0 +1,222 @@
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-o-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -o-transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.filter {
+  padding: 4rem 0;
+  width: 100%;
+  user-select: none;
+  -webkit-animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.filter_box {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.filter_box_left {
+  display: flex;
+  gap: 2rem;
+}
+
+.filter_box_left button {
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  border: 1px solid var(--main-bg-color);
+  transition: all 0.1s ease-in-out;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: var(--main-bg-color);
+  color: var(--icons-color);
+}
+
+.filter_box_left button:hover {
+  border: 1px solid var(--icons-color);
+  color: var(--icons-color);
+  box-shadow: var(--box-shadow);
+}
+
+.filter_box_right_box {
+  border: 1px solid var(--icons-color);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: var(--icons-color);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter_box_items {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem 0;
+  border-top: 1px solid var(--icons-light-color);
+}
+.filter_box_items_box {
+  padding: 1rem;
+}
+
+.filter_box_items_box_item {
+  background-color: var(--icons-color);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  color: var(--main-bg-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter_box_items_box_item_trans {
+  border: 1px solid var(--icons-color);
+  color: var(--icons-color);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  .filter {
+    width: 130%;
+  }
+
+  .filter_box {
+    width: 180%;
+    margin-left: 5rem;
+  }
+
+  .filter_box_left button {
+    font-size: 1.5rem;
+  }
+
+  .filter_box_items_box {
+    margin-left: 2.3rem;
+    font-size: 1.3rem;
+  }
+
+  .filter_box_right_box span {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-device-width: 377px) and (max-device-width: 425px) {
+  .filter {
+    width: 120%;
+  }
+
+  .filter_box {
+    width: 185%;
+    margin-left: 5rem;
+  }
+
+  .filter_box_left button {
+    font-size: 1.5rem;
+  }
+
+  .filter_box_items_box {
+    margin-left: 2.3rem;
+    font-size: 1.3rem;
+  }
+
+  .filter_box_right_box span {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-device-width: 427px) and (max-device-width: 768px) {
+  .filter {
+    width: 120%;
+  }
+
+  .filter_box {
+    width: 140%;
+    margin-left: 8rem;
+  }
+  .filter_box_left button {
+    font-size: 2rem;
+  }
+
+  .filter_box_items_box {
+    margin-left: 2.3rem;
+    font-size: 2rem;
+  }
+
+  .filter_box_right_box span {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .filter {
+    width: 100%;
+  }
+
+  .filter_box {
+    width: 110%;
+    margin-left: 15rem;
+  }
+  .filter_box_left button {
+    font-size: 2rem;
+  }
+
+  .filter_box_items_box {
+    margin-left: 2.3rem;
+    font-size: 2rem;
+  }
+
+  .filter_box_right_box span {
+    font-size: 2rem;
+  }
+}

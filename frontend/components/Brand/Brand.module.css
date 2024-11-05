@@ -1,0 +1,132 @@
+.Brand {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+}
+
+.Brand_box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  /* padding-bottom: 2.5rem; */
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 5rem;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  background: linear-gradient(to right, transparent, var(--icons-color));
+
+}
+
+.Brand_box_left h1 {
+  width: 140%;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: bolder;
+}
+
+.Brand_box_left p {
+  font-size: 1.3rem;
+  margin-top: -2rem;
+}
+
+.Brand_box_left_btn {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.Brand_box_right {
+  margin-left: 4rem;
+  /* margin-bottom: 4rem; */
+  padding: 0rem;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  .Brand {
+    width: 145%;
+    margin: 0 auto;
+  }
+  .Brand_box {
+    width: 140%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .Brand_box_left h1 {
+    font-size: 3rem;
+  }
+
+  .Brand_box_right {
+    margin-left: 3rem;
+  }
+  .Brand_box_left_btn {
+    justify-content: center;
+  }
+}
+@media screen and (min-device-width: 376px) and (max-device-width: 425px) {
+  .Brand {
+    width: 145%;
+  }
+  .Brand_box {
+    width: 140%;
+    grid-template-columns: 1fr;
+    margin-bottom: 6rem;
+  }
+  .Brand_box_left h1 {
+    font-size: 3rem;
+  }
+
+  .Brand_box_right {
+    margin-left: 3rem;
+  }
+  .Brand_box_left_btn {
+    justify-content: center;
+  }
+}
+@media screen and (min-device-width: 426px) and (max-device-width: 768px) {
+  .Brand {
+    width: 120%;
+    margin: 0 auto;
+  }
+  .Brand_box {
+    width: 140%;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 8rem;
+    margin-bottom: 6rem;
+  }
+
+  .Brand_box_left h1 {
+    font-size: 3rem;
+  }
+
+  .Brand_box_right {
+    margin-left: 8rem;
+  }
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .Brand {
+    width: 110%;
+    margin: 0 auto;
+  }
+  .Brand_box {
+    width: 100%;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 18rem;
+    margin-bottom: 6rem;
+  }
+  .Brand_box_left {
+    width: 110%;
+  }
+  .Brand_box_left h1 {
+    font-size: 3rem;
+  }
+
+  .Brand_box_right {
+    margin-left: 8rem;
+  }
+}

@@ -1,0 +1,134 @@
+.SubscriptionBox {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  margin: 0 auto;
+  background: linear-gradient(to bottom, var(--main-bg-color), #9ba8c6);
+}
+
+.SubscriptionBox_box_plan {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+@-webkit-keyframes bounceIn {
+  0% {
+    -webkit-transform: scale(0.3);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1.1);
+    opacity: 0.9;
+  }
+  80% {
+    -webkit-transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+@-moz-keyframes bounceIn {
+  0% {
+    -moz-transform: scale(0.3);
+    opacity: 0;
+  }
+  40% {
+    -moz-transform: scale(1.1);
+    opacity: 0.9;
+  }
+  80% {
+    -moz-transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: scale(1);
+    opacity: 1;
+  }
+}
+@-o-keyframes bounceIn {
+  0% {
+    -o-transform: scale(0.3);
+    opacity: 0;
+  }
+  40% {
+    -o-transform: scale(1.1);
+    opacity: 0.9;
+  }
+  80% {
+    -o-transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    -o-transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+  80% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.SubscriptionBox_box_popular {
+  position: absolute;
+  right: 3rem;
+  font-size: 1rem;
+  background-color: var(--icons-color);
+  color: var(--main-bg-color);
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  top: -3%;
+  right: 3%;
+  -webkit-animation: bounceIn 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  -moz-animation: bounceIn 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  -o-animation: bounceIn 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  animation: bounceIn 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.SubscriptionBox_box_price {
+  font-size: 2rem;
+  line-height: 0;
+  font-weight: 900;
+}
+
+.SubscriptionBox_box_info {
+  margin: 4rem 0;
+}
+
+.SubscriptionBox_box_info_para {
+  display: flex;
+  align-items: center;
+  max-height: 2rem;
+  gap: 0.1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn {
+  margin-left: 0rem !important;
+}
+
+@media screen and (max-width: 35em) {
+  .SubscriptionBox_box_info_para {
+    font-size: 1rem;
+  }
+}

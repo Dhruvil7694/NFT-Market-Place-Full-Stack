@@ -1,0 +1,161 @@
+.uploadNFT {
+  width: 100%;
+  margin-block: -1rem;
+  margin-bottom: 3rem;
+}
+
+.uploadNFT_box {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  border-radius: 2rem;
+}
+
+.uploadNFT_box_heading {
+  border-bottom: 1px solid var(--shadow-dark-color);
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+  }
+}
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: none;
+  }
+}
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: none;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.uploadNFT_box_heading h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+  -webkit-animation: fadeInUp 1s ease-in;
+  -moz-animation: fadeInUp 1s ease-in;
+  -o-animation: fadeInUp 1s ease-in;
+  animation: fadeInUp 1s ease-in;
+}
+
+.uploadNFT_box_heading p {
+  font-size: 1.1rem;
+  width: 90%;
+  line-height: 1.2;
+  -webkit-animation: fadeInUp 1s ease-in;
+  -moz-animation: fadeInUp 1s ease-in;
+  -o-animation: fadeInUp 1s ease-in;
+  animation: fadeInUp 1s ease-in;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+  }
+}
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: none;
+  }
+}
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.uploadNFT_box_title {
+  border-bottom: 1px solid var(--shadow-dark-color);
+  margin-top: 4rem;
+  -webkit-animation: fadeInDown 1s ease-in;
+  -moz-animation: fadeInDown 1s ease-in;
+  -o-animation: fadeInDown 1s ease-in;
+  animation: fadeInDown 1s ease-in;
+}
+
+.uploadNFT_box_title h2 {
+  font-size: 2rem;
+  line-height: 0;
+}
+
+.uploadNFT_box_title p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.uploadNFT_box_title_icon {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 0;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 35em) {
+  .uploadNFT_box {
+    width: 90%;
+  }
+  .uploadNFT_box_heading p {
+    width: 100%;
+  }
+
+  .uploadNFT_box_heading h1 {
+    font-size: 2rem;
+  }
+
+  .uploadNFT_box_title h2 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+}

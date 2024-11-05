@@ -1,0 +1,56 @@
+.title {
+  width: 100%;
+}
+
+.title_box {
+  width: 70%;
+  margin: 0 10rem;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.title_box h2 {
+  width: max-content;
+  font-size: 2.5rem;
+  line-height: 0;
+  text-align: right;
+}
+
+.title_box p{
+  text-align: left;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 375px) {
+
+  .title_box {
+    margin-left: 3rem;
+    width: 100%;
+    text-align: center;
+    margin-left: 14rem;
+  }
+
+  .title_box h2 {
+    font-size: 3rem;
+    line-height: 0;
+  }
+
+  
+}
+@media screen and (min-device-width: 321px) and (max-device-width: 425px) {
+
+  .title_box {
+    margin-left: 3rem;
+    width: 100%;
+    text-align: center;
+    margin-left: 15rem;
+  }
+
+  .title_box h2 {
+    font-size: 3rem;
+    line-height: 0;
+  }
+
+  
+}
+
+

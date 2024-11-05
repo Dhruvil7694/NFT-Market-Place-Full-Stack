@@ -1,0 +1,53 @@
+.button {
+  --color: var(--icons-color);
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--icons-color);
+  background: transparent;
+  cursor: pointer;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 300px;
+  border-radius: 50%;
+  
+}
+
+.button:hover {
+  color: #fff;
+  
+}
+
+.button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.3s;
+}
+
+.button:hover:before {
+  top: -30px;
+  left: -30px;
+  
+}
+
+.button:active:before {
+  background: var(--icons-color);
+  transition: background 0s;
+}

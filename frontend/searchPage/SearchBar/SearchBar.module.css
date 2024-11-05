@@ -1,0 +1,155 @@
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-o-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -o-transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.SearchBar {
+  width: 100%;
+  -webkit-animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.SearchBar_box {
+  width: 40%;
+  margin: 0 auto;
+  background-color: var(--main-bg-color);
+  color: var(--icon-color);
+  display: flex;
+  border-radius: 5rem;
+  align-items: center;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+  box-shadow: var(--box-shadow);
+}
+
+.SearchBar_box_icon {
+  font-size: 3rem;
+  color: var(--icon-color);
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+}
+
+.SearchBar_box input {
+  width: 85%;
+  border: 0;
+  outline: 0;
+  padding: 1rem;
+  background-color: var(--icon-color);
+  color: var(--icon-color);
+  font-size: medium;
+}
+
+.SearchBar_box input::placeholder {
+  color: var(--icons-color);
+  font-size: 1.2rem;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  .SearchBar {
+    width: 100%;
+  }
+  .SearchBar_box {
+    width: 110%;
+    margin-left: 22rem;
+    padding: 1rem;
+  }
+
+  .SearchBar_box_icon {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .SearchBar_box input::placeholder {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-device-width: 376px) and (max-device-width: 425px) {
+  .SearchBar {
+    width: 100%;
+  }
+  .SearchBar_box {
+    width: 110%;
+    margin-left: 23rem;
+    padding: 1rem;
+  }
+
+  .SearchBar_box_icon {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .SearchBar_box input::placeholder {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-device-width: 426px) and (max-device-width: 768px) {
+  .SearchBar {
+    width: 100%;
+  }
+  .SearchBar_box {
+    width: 90%;
+    margin-left: 28rem;
+    padding: 1rem;
+  }
+
+  .SearchBar_box_icon {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .SearchBar_box input::placeholder {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .SearchBar {
+    width: 100%;
+  }
+  .SearchBar_box {
+    width: 70%;
+    margin-left: 28rem;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .SearchBar_box_icon {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .SearchBar_box input::placeholder {
+    font-size: 1.8rem;
+  }
+}
